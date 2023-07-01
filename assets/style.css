@@ -278,6 +278,9 @@ main{
 			display: inline-block;
 		}
 @media screen and (max-width: 768px){
+	nav{
+		display: none;
+	}
 	main{
 		padding: 0 16px 64px 16px;
 	}
