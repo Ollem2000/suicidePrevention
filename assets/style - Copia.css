@@ -1,0 +1,230 @@
+*{
+	font-family: calibri;
+}
+hmtl, body{
+	background: #eee;
+	height: 100%; width: 100%;
+	margin: 0; padding: 0;
+}
+a{
+	text-decoration: none;
+}
+h4{
+	color: black;
+	font-size: 4vh;
+	text-align: center;
+	margin: 64px 0 16px 0;
+}
+h3{
+	color: black;
+}
+h5{
+	color: black;
+}
+.text{
+	color: black;
+	font-size: 2.5vh;
+	text-align: left;
+}
+.font{
+	color: black;
+	font-size: 2vh;
+	text-align: right;
+	margin: 16px 16px 16px 0;
+}
+.next{
+	display: none;
+	color: #222;
+	border: 1px solid #222;
+	border-radius: 4px;
+	padding: 16px;
+	margin: 32px;
+}
+	.next:hover{
+		color: white;
+		background: #222;
+	}
+nav{
+	background: #111;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+	nav>a{
+		color: white;
+		padding: 16px;
+		float: right;
+	}
+	nav>a:nth-of-type(1){
+		float: left;
+	}
+		nav>a:hover{
+			padding: 16px 16px 14px 16px;
+			border-bottom: 2px solid yellow;
+		}
+#hero{
+	background: url("hero.jpg");
+	background: black;
+	min-height: 100%;
+	display: flex; align-items: center; justify-content: center;
+}
+	#hero>aside{
+		display: flex; align-items: center; justify-content: center; flex-direction: column;
+	}
+	#heroContent{
+		color: white;
+		text-align: center;
+		border: 2px solid yellow;
+		padding: 64px;
+		margin: 48px 0 0 0;
+	}
+		#heroContent>h1{
+			color: yellow;
+			font-size: 3vh;
+			margin: -16px 0 32px 0;
+		}
+		#heroContent>h2{
+			font-size: 6vh;
+			margin: 0;
+		}
+		#heroContent>p{
+			font-size: 3.6vh;
+			margin: 0;
+		}
+		#heroContent>img{
+			height: 12vh;
+			margin: 32px 0 -16px 0;
+		}
+.nextHero{
+	color: white;
+	border: 1px solid white;
+	border-radius: 4px;
+	padding: 16px;
+	margin: 32px;
+}
+	.nextHero:hover{
+		color: #222;
+		background: white;
+	}
+
+main{
+	padding: 0 196px 64px 196px;
+	display: flex; justify-content: center; flex-direction: column;
+}
+	main>div{
+		display: flex; justify-content: center;
+	}
+.main{
+	border-top: 1px solid #aaa;
+}
+#important{
+	border: 1px solid black;
+	border-radius: 8px;
+	padding: 32px 48px;
+}
+#signals{
+	text-align: center;
+	display: flex; justify-content: space-between; flex-wrap: wrap;
+}
+	#signals>aside{
+		width: 50%;
+		min-width: 30%;
+		margin: 0 0 32px 0;
+	}
+		#signals>aside>div{
+			display: flex; justify-content: center; flex-wrap: wrap; gap: 8px;
+		}
+#treatment{
+	
+}
+		#treatment>aside>div{
+			display: flex; justify-content: center; flex-wrap: wrap; gap: 8px;
+		}
+			.card{
+				text-align: center;
+				background: white;
+				border: 1px solid #aaa;
+				border-radius: 8px;
+				width: 128px;
+				overflow: hidden;
+			}
+				.card>img{
+					background: black;
+					height: 128px;
+					width: 100%;
+				}
+				.card>p{
+					margin: 8px 0;
+				}
+	.dataContent{
+		display: flex;
+	}
+		.dataContent>div{
+		}
+		.dataContent>div>img{
+			background: black;
+			height: 160px;
+			width: 128px;
+			margin: 16px;
+		}
+		.dataContent>div>h5{
+			font-size: 3vh;
+			margin: 16px 0 16px 0;
+		}
+
+.chartMain>*{
+  border: 1px solid red;
+}
+.chartTitle{
+  background: blue;
+}
+.chartY{
+  background: green;
+  display: flex;
+}
+  .chartY>*{
+    border: 1px solid purple;
+  }
+    .chartYTitle{
+      box-sizing: border-box;
+	  width: 48px;
+      display: flex; align-items: center;
+    }
+		.chartYTitle>p{
+			text-align: center;
+			transform: rotate(-90deg);
+		}
+    .chartYAxis{
+      box-sizing: border-box;
+	  width: 64px;
+    }
+      .chartYAxisRow{
+        border: 1px solid gray;
+        padding: 16px;
+      }
+    .chartArea{
+      width: 100%;
+    }
+.chartX{
+  background: pink;
+  display: flex; flex-wrap: wrap;
+}
+  .chartX>*{
+    border: 1px solid cyan;
+	display: flex; flex-wrap: no-wrap;
+  }
+	.chartXName{
+		width: 102px;
+	}
+    .chartXAxis{
+      width: calc(100% - 102px - 4px);
+      display: flex;
+    }
+		.chartXAxis>*{
+			text-align: center;
+			width: 100%;
+		}
+#0chartXName0{
+	background: red;
+	border: 2px solid black;
+}

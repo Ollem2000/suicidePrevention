@@ -1,0 +1,287 @@
+*{
+	font-family: calibri;
+	scroll-behavior: smooth;
+}
+hmtl, body{
+	background: hsl(0, 0%, 96%);
+	height: 100%; width: 100%;
+	margin: 0; padding: 0;
+}
+a{
+	text-decoration: none;
+}
+h4{
+	color: black;
+	font-size: 3vh;
+	margin: 64px 0 16px 0;
+}
+h3{
+	color: black;
+}
+h5{
+	color: black;
+}
+.text{
+	color: black;
+	font-size: 2.4vh;
+	text-align: left;
+}
+.font{
+	color: black;
+	font-size: 2vh;
+	text-align: right;
+	margin: 16px 16px 16px 0;
+}
+.next{
+	display: none;
+	color: #222;
+	border: 1px solid #222;
+	border-radius: 4px;
+	padding: 16px;
+	margin: 32px;
+}
+	.next:hover{
+		color: white;
+		background: #222;
+	}
+nav{
+	background: #111;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+	nav>a{
+		font-size: 2.2vh;
+		color: white;
+		padding: 16px;
+		float: right;
+	}
+	nav>a:nth-of-type(1){
+		float: left;
+	}
+		nav>a:hover{
+			padding: 16px 16px 14px 16px;
+			border-bottom: 2px solid yellow;
+		}
+#hero{
+	background: url("hero.jpg");
+	background: #222;
+	min-height: 100%;
+	display: flex; align-items: center; justify-content: center;
+}
+	#hero>aside{
+		display: flex; align-items: center; justify-content: center; flex-direction: column;
+	}
+	#heroContent{
+		color: white;
+		text-align: center;
+		border: 2px solid yellow;
+		padding: 64px;
+		margin: 48px 0 0 0;
+	}
+		#heroContent>h1{
+			color: yellow;
+			font-size: 3vh;
+			margin: -16px 0 32px 0;
+		}
+		#heroContent>h2{
+			font-size: 6vh;
+			margin: 0;
+		}
+		#heroContent>p{
+			font-size: 3.6vh;
+			margin: 0;
+		}
+		#heroContent>img{
+			height: 12vh;
+			margin: 32px 0 -16px 0;
+		}
+.nextHero{
+	color: white;
+	border: 1px solid white;
+	border-radius: 4px;
+	padding: 16px;
+	margin: 32px;
+}
+	.nextHero:hover{
+		color: #222;
+		background: white;
+	}
+
+main{
+	padding: 0 196px 64px 196px;
+	display: flex; justify-content: center; flex-direction: column;
+}
+	/*main>div{
+		display: flex; justify-content: center;
+	}*/
+.main{
+	border-top: 1px solid #aaa;
+}
+#important{
+	background: #fff;
+	border: 1px solid black;
+	border-radius: 8px;
+	padding: 32px 48px;
+}/*
+#signals{
+	text-align: center;
+	display: flex; justify-content: space-between; flex-wrap: wrap;
+}
+	#signals>aside{
+		width: 50%;
+		min-width: 30%;
+		margin: 0 0 32px 0;
+	}
+		#signals>aside>div{
+			display: flex; justify-content: center; flex-wrap: wrap; gap: 8px;
+		}*/
+.main{
+	
+}
+		.main>aside>div{
+			display: flex; justify-content: center; flex-wrap: wrap; gap: 8px;
+		}
+			.card{
+				text-align: center;
+				background: white;
+				border: 1px solid #aaa;
+				border-radius: 8px;
+				width: 128px;
+				overflow: hidden;
+			}
+				.card>img{
+					object-fit: cover;
+					background: black;
+					border-bottom: 1px solid #ddd;
+					height: 128px;
+					width: 100%;
+				}
+				.card>p{
+					margin: 8px 0;
+				}
+	.dataContent{
+		display: flex;
+	}
+		.dataContent>div{
+		}
+		.dataContent>div>img{
+			object-fit: cover;
+			background: black;
+			border: 1px solid #aaa;
+			border-radius: 8px;
+			height: 160px;
+			width: 128px;
+			margin: 16px;
+		}
+		.dataContent>div>h5{
+			font-size: 3vh;
+			margin: 16px 0 16px 0;
+		}
+
+.chartMain>*{
+}
+.chartTitle{
+	font-size: 2vh;
+	text-align: right;
+	padding: 16px 0;
+}
+.chartY{
+	display: flex;
+}
+	.chartY>*{
+	}
+	.chartYTitle{
+		width: 48px;
+		position: relative;
+		display: flex; align-items: center;
+	}
+	.chartYTitle>p{
+		font-weight: bold;
+		text-align: center;
+		width: 200px;
+		transform: rotate(-90deg);
+		left: calc(50% - 100px);
+		position: absolute;
+	}
+	.chartYAxis{
+		height: 200px;
+		width: 64px;
+		display: flex; flex-direction: column;
+	}
+	.chartYAxisRow{
+		text-align: right;
+		height: 100%;
+		padding: 0 8px 0 0;
+		display: flex; align-items: flex-end; justify-content: flex-end;
+	}
+	.chartArea{
+		background: #eee;
+		border: 1px solid #aaa;
+		box-sizing: border-box;
+		height: auto;
+		width: 100%;
+		display: flex;
+	}
+		.areaColumn{
+			height: 200px;
+			width: 100%;
+			/*transform: rotate(180deg);*/
+			display: flex; flex-direction: column;
+		}
+		.areaRow{
+			border: 1px solid #ddd;
+			box-sizing: border-box;
+			height: 100%;
+		}
+.chartX, .chartL{
+	display: flex; flex-wrap: wrap;
+}
+.chartX{
+	font-weight: bold;
+}
+	.chartX>*, .chartL>*{
+		display: flex; flex-wrap: no-wrap;
+	}
+	.chartXName, .chartLName{
+		width: 90px;
+	}
+	.chartXAxis, .chartLAxis{
+		width: calc(100% - 90px - 4px);
+		display: flex;
+	}
+	.chartXAxis>*, .chartLAxis>*{
+		text-align: center;
+		width: 100%;
+	}
+		.areaRow{
+			padding: 0;
+			margin: 0;
+			position: relative;
+			display: inline-block;
+		}
+		.chartBarUl{
+			text-align: center;
+			list-style: none;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			bottom: 0;
+			transform: rotate(180deg) rotateY(180deg);
+		}
+		.chartBar{
+			border: 1px solid black;
+			box-sizing: border-box;
+			width: 8px;
+			margin: 0 1px;
+			display: inline-block;
+		}
+@media screen and (max-width: 768px){
+	main{
+		padding: 0 16px 64px 16px;
+	}
+		.dataContent>div>img{
+			display: none;
+		}
+}
